@@ -7,6 +7,10 @@ import Cart from "./pages/Cart";
 import { ProductsData } from "./api/Api";
 import Product from "./components/Product";
 import Login from "./pages/Login";
+import Earrings from "./pages/Earrings";
+import Necklace from "./pages/Necklace";
+import Bracelet from "./pages/Bracelet";
+import Glass from "./pages/Glass";
 
 const Layout = () => {
   return (
@@ -28,6 +32,22 @@ const router = createBrowserRouter([
       path:"/",
       element:<Home />,
       loader: ProductsData,
+    },
+    {
+      path:"/Earrings",
+      element:<Earrings/>
+    },
+    {
+      path:"/Necklace",
+      element:<Necklace />,
+    },
+    {
+      path:"/Bracelet",
+      element:<Bracelet />,
+    },
+    {
+      path:"/Glass",
+      element:<Glass />,
     },
     {
       path:"/Product/:id",
